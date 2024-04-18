@@ -20,3 +20,11 @@ Promise.resolve(1)
 setTimeout(() => {
   console.log('timer2')
 }, 1000)
+
+foo(typeof a);
+function foo(p) {
+  console.log(this);
+  console.log(p);
+  console.log(typeof b);
+  let b = 0;
+}
